@@ -25,13 +25,13 @@ The key operations performed by this method include:
 Mathematical Model
 
 Let:
-		 n  be the total number of characters in the buffer before insertion, and
-		 i  be the cursor position (with  0 \leq i \leq n ).
+	n  be the total number of characters in the buffer before insertion, and
+	i  be the cursor position (with  0 \leq i \leq n ).
 
 The time cost can be modeled as:
-		Left substring extraction:  O(i) 
-		Right substring extraction:  O(n - i) 
-		Concatenation:  O(i + 1 + (n - i)) = O(n + 1)  which simplifies to  O(n) 
+	Left substring extraction:  O(i) 
+	Right substring extraction:  O(n - i) 
+	Concatenation:  O(i + 1 + (n - i)) = O(n + 1)  which simplifies to  O(n) 
 
 Thus, the overall runtime  T(n)  for a single insert operation is:
 

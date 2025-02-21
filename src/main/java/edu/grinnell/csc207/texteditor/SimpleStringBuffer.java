@@ -1,7 +1,7 @@
 package edu.grinnell.csc207.texteditor;
 
 /**
- * A naive implementation of a text buffer using a {@code String} as the backing store.
+ * A very naive implementation of a text buffer using a {@code String} as the backing store.
  * The cursor is represented as an index into the String, ranging from 0 to the length
  * of the String. Insertion occurs at the cursor position and deletion removes the character
  * immediately before the cursor (simulating a backspace), then moves the cursor one position left.
@@ -17,7 +17,7 @@ public class SimpleStringBuffer {
     private int cursor;
     
     /**
-     * Constructs a new, empty {@code SimpleStringBuffer}.
+     * It constructs a new, empty {@code SimpleStringBuffer}.
      */
     public SimpleStringBuffer() {
         this.text = "";

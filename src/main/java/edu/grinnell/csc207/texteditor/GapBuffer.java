@@ -33,7 +33,7 @@ public class GapBuffer {
    /**
      * Deletes the character immediately to the left of the cursor (simulating a backspace).
      * If the cursor is at the beginning of the buffer, no deletion occurs.
-     * After deletion, the cursor moves one position to the left.
+     * After the deletion, the cursor moves one position to the left.
      */
     public void delete() {
         if (gapStart > 0) {
@@ -125,9 +125,8 @@ public class GapBuffer {
         return sb.toString();
     }
     /**
-     * Expands the gap when it is empty by allocating a new array (doubling the current capacity)
-     * and copying over the text such that the left text starts at index 0 and the right text ends
-     * at the end of the new array. The new gap occupies the middle of the array.
+     * Expands the gap when it is empty by allocating a new array.
+     * The new gap occupies the middle of the array.
      */
     private void expandGap() {
         int oldCapacity = buffer.length;
@@ -140,7 +139,7 @@ public class GapBuffer {
         }
         // Compute the size of the right text.
         int rightSize = oldCapacity - gapEnd;
-        // New gap will be placed so that the right text ends at newBuffer[newCapacity - 1].
+        // New gap will be placed.
         int newGapEnd = newCapacity - rightSize;
         // Copy the right text.
         for (int i = gapEnd; i < oldCapacity; i++) {

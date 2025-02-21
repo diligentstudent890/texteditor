@@ -62,7 +62,7 @@ public class SimpleStringBufferTests {
         // Build the buffer "abc" with cursor at end.
         buffer.insert('a');
         buffer.insert('b');
-        buffer.insert('c'); // Buffer "abc", cursor at 3.
+        buffer.insert('c'); 
         
         buffer.moveLeft();
         assertEquals(2, buffer.getCursorPosition(), "Cursor should be at 2 after one moveLeft()");
@@ -77,7 +77,7 @@ public class SimpleStringBufferTests {
         buffer.moveLeft();
         assertEquals(0, buffer.getCursorPosition(), "Cursor remains at 0 after extra moveLeft()");
         
-        // Move right until the end.
+        // Move right till the end.
         buffer.moveRight();
         assertEquals(1, buffer.getCursorPosition(), "Cursor should be at 1 after moveRight()");
         buffer.moveRight();
@@ -95,7 +95,7 @@ public class SimpleStringBufferTests {
         buffer.insert('e');
         buffer.insert('l');
         buffer.insert('l');
-        buffer.insert('o');  // Buffer now "hello"
+        buffer.insert('o'); 
         
         assertEquals(5, buffer.getSize(), "Buffer size should be 5");
         assertEquals('h', buffer.getChar(0));
