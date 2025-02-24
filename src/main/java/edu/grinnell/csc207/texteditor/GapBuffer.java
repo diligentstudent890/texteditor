@@ -8,7 +8,9 @@ public class GapBuffer {
     private int gapStart;
     private int gapEnd;
     private static final int INITIAL_CAPACITY = 10;
-    
+/**
+ * Constructor
+ */    
     public GapBuffer() {
         buffer = new char[INITIAL_CAPACITY];
         gapStart = 0;
@@ -54,6 +56,7 @@ public class GapBuffer {
      * Moves the cursor one position to the left.
      * If the cursor is not at the beginning, the character immediately left of the gap is moved
      * to the right end of the gap.
+     * @return void
      */
     public void moveLeft() {
         if (gapStart > 0) {
@@ -127,6 +130,7 @@ public class GapBuffer {
     /**
      * Expands the gap when it is empty by allocating a new array.
      * The new gap occupies the middle of the array.
+     * @return void
      */
     private void expandGap() {
         int oldCapacity = buffer.length;

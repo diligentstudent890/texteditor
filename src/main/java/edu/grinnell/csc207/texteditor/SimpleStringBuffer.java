@@ -67,7 +67,8 @@ public class SimpleStringBuffer {
     }
     
     /**
-     * Moves the cursor one position to the right. If the cursor is already at the end of the buffer,
+     * Moves the cursor one position to the right. 
+     * If the cursor is already at the end of the buffer,
      * it remains unchanged.
      */
     public void moveRight() {
@@ -94,7 +95,8 @@ public class SimpleStringBuffer {
      */
     public char getChar(int i) {
         if (i < 0 || i >= text.length()) {
-            throw new IndexOutOfBoundsException("Index " + i + " is out of bounds for buffer of size " + text.length());
+            throw new IndexOutOfBoundsException("Index " + i + " is "
+                    + "out of bounds for buffer of size " + text.length());
         }
         return text.charAt(i);
     }

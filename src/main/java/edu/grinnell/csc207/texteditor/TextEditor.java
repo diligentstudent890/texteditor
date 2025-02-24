@@ -41,7 +41,7 @@ public class TextEditor {
         // Use a StringBuilder as our simple text buffer and track the cursor.
         StringBuilder textBuffer = new StringBuilder(initialContent);
         // Use an integer array to allow mutation within inner scopes.
-        int[] cursorPosition = new int[] { textBuffer.length() };
+        int[] cursorPosition = new int[] {textBuffer.length()};
 
         // Set up Lanterna.
         DefaultTerminalFactory terminalFactory = new DefaultTerminalFactory();
@@ -74,7 +74,9 @@ public class TextEditor {
 
                 // Read in a keystroke.
                 KeyStroke keyStroke = screen.readInput();
-                if (keyStroke == null) continue;
+                if (keyStroke == null) {
+                    continue;
+                }
                 KeyType keyType = keyStroke.getKeyType();
 
                 // Process the keystroke.
