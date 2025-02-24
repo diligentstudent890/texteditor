@@ -56,7 +56,6 @@ public class GapBuffer {
      * Moves the cursor one position to the left.
      * If the cursor is not at the beginning, the character immediately left of the gap is moved
      * to the right end of the gap.
-     * @return void
      */
     public void moveLeft() {
         if (gapStart > 0) {
