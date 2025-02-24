@@ -130,7 +130,6 @@ public class GapBuffer {
     /**
      * Expands the gap when it is empty by allocating a new array.
      * The new gap occupies the middle of the array.
-     * @return void
      */
     private void expandGap() {
         int oldCapacity = buffer.length;
