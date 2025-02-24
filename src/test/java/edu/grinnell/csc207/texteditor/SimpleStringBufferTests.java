@@ -1,21 +1,19 @@
 package edu.grinnell.csc207.texteditor;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.BeforeEach;
+import net.jqwik.api.Property;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 
-import net.jqwik.api.ForAll;
-import net.jqwik.api.Property;
 
 /**
- * Unit tests for {@code SimpleStringBuffer}.
+ * Unit tests for SimpleStringBuffer.
  */
 public class SimpleStringBufferTests {
 
     private SimpleStringBuffer buffer;
 
-    @BeforeEach
+
     public void setUp() {
         buffer = new SimpleStringBuffer();
     }

@@ -1,12 +1,13 @@
 # CSC 207: Text Editor
 
-**Author**: _(TODO: fill me in)_
+**Author**: Brian He
 
 ## Resources Used
 
 + _(TODO: fill me in)_
-+ ...
-+ ...
++ ...My IDE: NetBeans 24
++ ...JDK23
++ ...Talked with Prof.Osera
 
 ## Changelog
 

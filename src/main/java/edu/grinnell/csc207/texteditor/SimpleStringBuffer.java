@@ -36,7 +36,7 @@ public class SimpleStringBuffer {
     }
     
     /**
-     * Deletes the character immediately before the current cursor position (simulating a backspace).
+     * Deletes the character immediately before the current cursor position.
      * If the cursor is at the beginning of the buffer (i.e. 0), nothing is deleted.
      * After a successful deletion, the cursor moves one position backwards.
      */
