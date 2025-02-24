@@ -100,7 +100,8 @@ public class GapBuffer {
      */
     public char getChar(int i) {
         if (i < 0 || i >= getSize()) {
-            throw new IndexOutOfBoundsException("Index " + i + " is out of bounds. Size: " + getSize());
+            throw new IndexOutOfBoundsException("Index " + i + " "
+                    + "is out of bounds. Size: " + getSize());
         }
         if (i < gapStart) {
             return buffer[i];
