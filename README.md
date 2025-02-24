@@ -13,6 +13,42 @@
 
 _(TODO: fill me in with a log of your committed changes)_
 
+commit 0c66ce20b975115270086ba4a492943ed68f8c55 (HEAD -> main, origin/main, origin/HEAD)
+Author: Brian He <brianhe@Brians-MacBook-Air.local>
+Date:   Sun Feb 23 23:30:07 2025 -0600
+
+    Finalized everything and reviewed tests over the weekend
+
+commit 4278b3bcf20042695351140ebc7f8f6f1ea2c0db
+Author: Brian He <brianhe@Brians-MacBook-Air.local>
+Date:   Fri Feb 21 01:19:01 2025 -0600
+
+    Polished everything I had atm
+
+commit 18e928e642c15ccd4917fd0e506184142cb4f1fb
+Author: Brian He <brianhe@Brians-MacBook-Air.local>
+Date:   Thu Feb 20 01:16:50 2025 -0600
+
+    Forgot to commit - Finished part2 and part3
+
+commit 494a3329b2e826030884cd2f530b2762e4642afb
+Author: Brian He <brianhe@Brians-MacBook-Air.local>
+Date:   Wed Feb 19 00:19:40 2025 -0600
+
+    Finished part1
+
+commit 32a90495f40bd92ce905d4d78fbdab4dbaa6d5f9
+Author: Peter-Michael Osera <osera@cs.grinnell.edu>
+Date:   Thu Feb 13 12:40:05 2025 -0600
+
+    Project files
+
+commit 02dc92144ecc088bcefb4a9798df0934efe300c1
+Author: Peter-Michael Osera <osera@cs.grinnell.edu>
+Date:   Thu Feb 13 12:39:53 2025 -0600
+
+    initial commit
+
 ## Analysis of the insert Method in SimpleStringBuffer
 The insert method in SimpleStringBuffer takes a single character ch as input and
 inserts it into the backing String at the current cursor position. 
