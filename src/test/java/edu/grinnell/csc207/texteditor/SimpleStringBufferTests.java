@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 import net.jqwik.api.ForAll;
+import org.junit.jupiter.api.BeforeEach;
 
 
 /**
@@ -15,6 +16,7 @@ public class SimpleStringBufferTests {
     private SimpleStringBuffer buffer;
 
 
+@BeforeEach
     public void setUp() {
         buffer = new SimpleStringBuffer();
     }
