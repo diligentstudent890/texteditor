@@ -4,6 +4,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import net.jqwik.api.ForAll;
+import net.jqwik.api.Property;
+
 /**
  * Unit tests for GapBuffer
  */
@@ -82,5 +85,19 @@ public class GapBufferTests {
         // Extra moveRight() should leave the cursor at the end.
         buffer.moveRight();
         assertEquals(3, buffer.getCursorPosition(), "Cursor remains at end after extra moveRight()");
+    }
+    /**
+     * Property-based test: inserting an arbitrary string one char at a time
+     * should yield the same content, size, and cursor position.
+     */
+    @Property
+    public void propertyInsertCreatesCorrectBuffer(@ForAll String randomString) {
+        GapBuffer buf = new GapBuffer();
+        for (char ch : randomString.toCharArray()) {
+            buf.insert(ch);
+        }
+        assertEquals(randomString, buf.toString(), "Buffer content should match the inserted string");
+        assertEquals(randomString.length(), buf.getSize(), "Buffer size should equal the inserted string's length");
+        assertEquals(randomString.length(), buf.getCursorPosition(), "Cursor should be at the end of the buffer");
     }
 }

@@ -8,6 +8,7 @@
 + ...My IDE: NetBeans 24
 + ...JDK23
 + ...Talked with Prof.Osera
++ ... https://osera.cs.grinnell.edu/ttap/data-structures-labs/text-editor.html
 
 ## Changelog
 
